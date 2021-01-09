@@ -28,6 +28,9 @@
     "webpack": "^5.12.1"
   },
   "scripts": {
+    "test": "jest",
+    "test:cov": "npm test -- --coverage",
+    "test:watch": "npm test -- --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   }

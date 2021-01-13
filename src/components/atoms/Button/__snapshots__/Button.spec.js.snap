@@ -2,7 +2,9 @@
 
 exports[`<Button /> should otherwise match snapshot 1`] = `
 <div>
-  <button>
+  <button
+    class="text primary small"
+  >
     Valider
   </button>
 </div>

@@ -1,7 +1,69 @@
-.buttonDeLaMort {
-  background: blue;
-  color: white;
+/* reset */
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
-.buttonDeLaMort:hover {
-  background: yellow;
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+/* CONTAINED */
+button.contained.primary {
+  color: white;
+  background: red;
+}
+
+button.contained.secondary {
+  color: white;
+  background: blue;
+}
+
+/* OUTLINED */
+button.outlined.primary {
+  color: red;
+  border: 1px solid red;
+}
+
+button.outlined.secondary {
+  color: blue;
+  border: 1px solid blue;
+}
+
+/* TEXT */
+button.primary {
+  color: red;
+}
+
+button.secondary {
+  color: blue;
+}
+
+/* SIZE */
+button.small {
+  font-size: 1em;
+}
+
+button.medium {
+  font-size: 1.4em;
+}
+
+button.large {
+  font-size: 1.8em;
+}
+
+/* FULL */
+button.full {
+  width: 100%;
 }

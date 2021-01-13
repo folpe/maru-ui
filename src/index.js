@@ -1,1 +1,1 @@
-export Button from './components/atoms/Button/Button'
+export { default } from './components/atoms/Button'

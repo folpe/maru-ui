@@ -1,0 +1,7 @@
+.buttonDeLaMort {
+  background: blue;
+  color: white;
+}
+.buttonDeLaMort:hover {
+  background: yellow;
+}

@@ -2,6 +2,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+exports.html = (options) => {
+  const HtmlWebpackPlugin = require('html-webpack-plugin')
+  return { plugins: [new HtmlWebpackPlugin(options)] }
+}
+
 exports.babelize = ({ include, exclude = /node_modules/ } = {}) => {
   return {
     module: {
@@ -223,10 +228,10 @@ exports.loadCSS = ({ include, exclude, modules } = {}) =>
   loadStyling({ ext: 'css', include, exclude, modules })
 
 exports.extractSass = ({ include, exclude, modules } = {}) =>
-  extractStyling({ ext: 'sass', include, exclude, modules, altLang: 'sass' })
+  extractStyling({ ext: 'scss', include, exclude, modules, altLang: 'sass' })
 
 exports.loadSass = ({ include, exclude, modules } = {}) =>
-  loadStyling({ ext: 'sass', include, exclude, modules, altLang: 'sass' })
+  loadStyling({ ext: 'scss', include, exclude, modules, altLang: 'sass' })
 
 // Construit une pipeline de chargeurs CSS, avec ou sans `style-loader` en fin de chaîne (début de tableau, donc),
 // assurant notamment PostCSS avec css-next mais aussi, en début de pipeline (fin de tableau), un éventuel

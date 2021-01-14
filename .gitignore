@@ -63,3 +63,7 @@ jspm_packages/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+
+# Webpack build output
+public/
+dist/

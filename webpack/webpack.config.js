@@ -24,7 +24,6 @@ const CORE_CONFIG = merge([
   parts.lintJS(),
   parts.loadFonts(),
   parts.loadImages({ include: path.resolve(root, 'src') }),
-
 ])
 
 const productionConfig = () =>
@@ -32,7 +31,7 @@ const productionConfig = () =>
     {
       mode: 'production',
       optimization: {
-        runtimeChunk: true,
+        // runtimeChunk: true,
         splitChunks: {
           cacheGroups: {
             styles: {

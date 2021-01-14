@@ -6,6 +6,9 @@
   "author": "Florent Pellegrin <florent.pellegrin@gmail.com>",
   "license": "MIT",
   "main": "dist/main.js",
+  "files": [
+    "dist/*.css"
+  ],
   "dependencies": {
     "airbnb-prop-types": "^2.16.0",
     "classnames": "^2.2.6",

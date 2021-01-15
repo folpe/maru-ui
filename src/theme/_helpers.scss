@@ -1,0 +1,14 @@
+// px to em function
+@function pixelToEm($target, $context) {
+  @return $target / $context * 1em;
+}
+
+// px to rem function
+@function pixelToRem($target, $context) {
+  @return $target / $context * 1rem;
+}
+
+@mixin fontSize($size, $context) {
+  font-size: $size;
+  font-size: pixelToRem($size, $context);
+}

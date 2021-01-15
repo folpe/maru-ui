@@ -1526,7 +1526,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-controls@6.1.14":
+"@storybook/addon-controls@6.1.14", "@storybook/addon-controls@^6.1.11":
   version "6.1.14"
   resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-6.1.14.tgz#3f4f9e60763facecb654867881533785454ea16d"
   integrity sha512-4KzTD5J9pUHFe2kBE1gfDw0wjiSsXjMqX82L+l0vzt1GGqQR1Bkaqodg4eGgCM2SU50ysVWvgC3N5BYEiFeZkw==
@@ -4274,7 +4274,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==

@@ -3,14 +3,13 @@ import React from 'react'
 import Button from './Button'
 
 export default {
-  title: 'Atoms/Button',
+  title: 'Atoms',
   component: Button,
 }
 
-export const Basic = () => (
-  <Button onClick={() => console.log('ici')}>Coucou</Button>
-)
+const Template = (args) => <Button {...args} />
 
-export const WithFunc = () => (
-  <Button onClick={() => console.log('ici')}>Hello</Button>
-)
+export const BasicButton = Template.bind({})
+BasicButton.args = {
+  children: 'Valider',
+}

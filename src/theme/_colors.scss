@@ -1,0 +1,25 @@
+$common-black: #000;
+$common-white: #fff;
+
+$grey: #a8aeb4;
+$grey-darker: darken($grey, 50%);
+$grey-dark: darken($grey, 25%);
+$grey-light: lighten($grey, 25%);
+$grey-lighter: lighten($grey, 100%);
+
+$primary: #763dfe;
+$primary-darker: darken($primary, 50%);
+$primary-dark: darken($primary, 25%);
+$primary-light: lighten($primary, 25%);
+$primary-lighter: lighten($primary, 100%);
+
+$secondary: #ff1493;
+$secondary-darker: darken($secondary, 50%);
+$secondary-dark: darken($secondary, 25%);
+$secondary-light: lighten($secondary, 25%);
+$secondary-lighter: lighten($secondary, 100%);
+
+$error: red;
+$warning: orange;
+$info: blue;
+$success: green;

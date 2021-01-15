@@ -3,7 +3,7 @@
 exports[`<Button /> should otherwise match snapshot 1`] = `
 <div>
   <button
-    class="text primary small"
+    class="contained primary medium"
   >
     Valider
   </button>

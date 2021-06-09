@@ -1,0 +1,51 @@
+@import '../../../theme/colors';
+@import '../../../theme/helpers';
+
+.badge {
+  font-family: sans-serif;
+  color: $common-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary;
+  border-radius: 10px;
+  @include fontSize(32 * 0.65, 16);
+  font-weight: 600;
+  transition: transform 0.5s, all 0.5s;
+  transform-origin: top left;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+
+  &.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+  }
+  &.rounded {
+    display: inline-flex;
+    min-width: 32px;
+    max-width: 56px;
+    height: 32px;
+    border-radius: 16px;
+  }
+
+  &.xsmall {
+    transform: scale(0.6);
+  }
+  &.small {
+    transform: scale(0.8);
+  }
+  &.medium {
+    transform: scale(1);
+  }
+  &.large {
+    transform: scale(1.2);
+  }
+
+  &.primary {
+    background: $primary;
+  }
+  &.secondary {
+    background: $secondary;
+  }
+}

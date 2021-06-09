@@ -1,5 +1,5 @@
 module.exports = {
-  collectCoverageFrom: ['src/**/*.js'],
+  collectCoverageFrom: ['src/**/*.js', '!src/**/*.stories.js'],
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': '<rootDir>/jest/dummy.js',
   },

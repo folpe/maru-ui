@@ -1,0 +1,138 @@
+@import '../../../theme/colors';
+@import '../../../theme/helpers';
+
+/* reset */
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.3s;
+  border: 1px solid transparent;
+
+  /* SIZE */
+  &.small {
+    @include fontSize(12, 16);
+  }
+  &.medium {
+    @include fontSize(14, 16);
+  }
+  &.large {
+    @include fontSize(16, 16);
+  }
+
+  /* FULL */
+  &.full {
+    width: 100%;
+  }
+
+  /* TEXT */
+  &.primary {
+    color: $primary;
+  }
+  &.secondary {
+    color: $secondary;
+  }
+
+  &[disabled] {
+    cursor: default;
+    background: none;
+    color: $grey;
+    &:hover {
+      background: none;
+    }
+  }
+
+  /* CONTAINED */
+  &.contained {
+    color: $common-white;
+    border: 1px solid transparent;
+    &.primary {
+      background: $primary;
+      &:hover {
+        background: $primary-dark;
+      }
+    }
+    &.secondary {
+      background: $secondary;
+      &:hover {
+        background: $secondary-dark;
+      }
+    }
+    &[disabled] {
+      cursor: default;
+      background: $grey;
+      color: $common-white;
+      &:hover {
+        background: $grey;
+        color: $common-white;
+      }
+    }
+  }
+
+  /* OUTLINED */
+  &.outlined {
+    background: $common-white;
+    &.primary {
+      color: $primary;
+      border: 1px solid $primary;
+      &:hover {
+        background: $primary-light;
+      }
+    }
+    &.secondary {
+      color: $secondary;
+      border: 1px solid $secondary;
+      &:hover {
+        background: $secondary-light;
+      }
+    }
+    &[disabled] {
+      cursor: default;
+      background: none;
+      border: 1px solid $grey;
+      color: $grey;
+      &:hover {
+        background: none;
+        border: 1px solid $grey;
+        color: $grey;
+      }
+    }
+  }
+
+  /* NAKED */
+  &.naked {
+    padding: 8px;
+    background: none;
+    border: 1px solid transparent;
+    color: inherit;
+    &:hover {
+      background: $grey-light;
+    }
+    &[disabled] {
+      cursor: default;
+      background: none;
+      color: $grey;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+}

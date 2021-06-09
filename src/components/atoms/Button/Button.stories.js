@@ -9,7 +9,7 @@ export default {
 
 const Template = (args) => <Button {...args} />
 
-export const BasicButton = Template.bind({})
-BasicButton.args = {
+export const ButtonBasic = Template.bind({})
+ButtonBasic.args = {
   children: 'Valider',
 }

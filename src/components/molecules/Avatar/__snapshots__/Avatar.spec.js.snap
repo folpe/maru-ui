@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> should otherwise match snapshot 1`] = `
+<div>
+  <div
+    class="badge circle primary small avatar"
+  >
+    <span>
+      SM
+    </span>
+  </div>
+</div>
+`;

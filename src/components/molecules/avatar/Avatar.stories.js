@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Avatar from './Avatar'
+import { Avatar } from './'
 import imageFile from '../../../../static/avatar.jpg'
 
 const image = {

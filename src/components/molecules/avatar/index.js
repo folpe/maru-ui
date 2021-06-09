@@ -3,7 +3,7 @@ import React from 'react'
 import { node, oneOf, string } from 'prop-types'
 
 import './avatar.scss'
-import Badge from '../../atoms/Badge'
+import { Badge } from '../../atoms/badge'
 import { getInitials } from '../../../helpers/common'
 
 /**
@@ -16,7 +16,15 @@ import { getInitials } from '../../../helpers/common'
  * @param {form} form - The form of avatar ['rounded', 'circle'].
  * @param {color} color - The color of avatar ['primary', 'secondary'].
  */
-const Avatar = ({ image, name, lastname, size, form, color, ...props }) => {
+export const Avatar = ({
+  image,
+  name,
+  lastname,
+  size,
+  form,
+  color,
+  ...props
+}) => {
   return (
     <Badge className='avatar' size={size} color={color} form={form}>
       {image || <span>{getInitials({ name, lastname })}</span>}
@@ -32,5 +40,3 @@ Avatar.propTypes = {
   color: oneOf(['primary', 'secondary']),
   image: node,
 }
-
-export default Avatar

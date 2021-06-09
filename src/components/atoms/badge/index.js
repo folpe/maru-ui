@@ -4,7 +4,7 @@ import { node, oneOf, string } from 'prop-types'
 import classnames from 'classnames'
 import './badge.scss'
 
-const Badge = ({
+export const Badge = ({
   children,
   form = 'circle',
   color = 'primary',
@@ -25,5 +25,3 @@ Badge.propTypes = {
   size: oneOf(['xsmall', 'small', 'medium', 'large']),
   className: string,
 }
-
-export default Badge

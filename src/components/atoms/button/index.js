@@ -12,7 +12,7 @@ import './button.scss'
  * @param {size} size - The size of the button ['small', 'medium', 'large'].
  * @param {full} full - [Boolean] If true the button is 100% width.
  */
-const Button = (
+export const Button = (
   {
     children,
     variant = 'contained',
@@ -42,5 +42,3 @@ Button.propTypes = {
   full: bool,
   disabled: bool,
 }
-
-export default Button

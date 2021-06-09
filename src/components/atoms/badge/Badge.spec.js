@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Badge from './Badge'
+import { Badge } from './'
 
 describe('<Badge/>', () => {
   it('should otherwise match snapshot', () => {
